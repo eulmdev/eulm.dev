@@ -29,7 +29,7 @@ body {
 *:focus {
     outline: none;
 }
-    
+
 .container {
     width: 100%;
     height: 100%;
@@ -65,7 +65,7 @@ body {
     font-weight: 360;
     color: var(--text-bold);
     text-shadow: 3px 3px 4px var(--background), -3px -3px 4px var(--background),
-                 -3px 3px 4px var(--background), 3px -3px 4px var(--background);
+    -3px 3px 4px var(--background), 3px -3px 4px var(--background);
 }
 
 #hero .desc {
@@ -108,6 +108,7 @@ body {
 
 [tooltip]:hover::before, [tooltip]:focus::before {
     padding: 5px 8px;
+    background-color: var(--background);
     border: 1px solid var(--accent);
     border-radius: 5px;
 
