@@ -24,6 +24,7 @@ body {
     background-color: var(--background);
     color: var(--text-main);
     font-family: var(--font-main);
+    line-height: 0.9;
 }
 
 *:focus {
@@ -38,7 +39,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
 #hero {
@@ -69,7 +70,7 @@ body {
 }
 
 #hero .desc {
-    margin: 0;
+    margin: 20px 0 0;
     font-size: 1.4rem;
 }
 
