@@ -1,4 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@font-face {
+    font-family: 'Nunito Sans';
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: 1 1000;
+    src: url('assets/nunito-sans.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'JetBrains Mono';
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: 1 1000;
+    src: url('assets/jetbrains-mono.ttf') format('truetype');
+}
 
 :root {
     --background: #0c0c0c;
