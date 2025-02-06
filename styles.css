@@ -142,6 +142,7 @@ body {
     align-items: center;
     gap: 0.4rem;
 
+    width: 100%;
     max-width: 16rem;
     padding: 0.4rem 0.6rem;
     border: 1px solid var(--accent);
