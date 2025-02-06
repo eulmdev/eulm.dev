@@ -99,7 +99,7 @@ body {
     transition: color 0.2s ease;
 }
 
-#links .link:hover, #links .link:focus {
+#links .link:hover, #links .link:active {
     outline: none;
     color: var(--text-bold);
 }
@@ -118,7 +118,7 @@ body {
     position: relative;
 }
 
-[tooltip]:hover::after, [tooltip]:focus::after {
+[tooltip]:hover::after, [tooltip]:active::after {
     padding: 5px 8px;
     background-color: var(--background);
     border: 1px solid var(--accent);
