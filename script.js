@@ -1,9 +1,5 @@
 function onTouchscreenClick(el, callback) {
-    el.addEventListener('click', (event) => {
-        if (event.pointerType !== 'touch') return;
-
-        callback(event);
-    });
+    el.addEventListener('touchstart', callback);
 }
 
 function touchscreenUseDoubleClick() {
@@ -16,7 +12,6 @@ function touchscreenUseDoubleClick() {
             if (clicked !== link.href) {
                 event.preventDefault();
                 clicked = link.href;
-                return;
             }
         });
     });
@@ -28,9 +23,7 @@ function touchscreenUseDoubleClick() {
             if ([...link.children].includes(event.target)) clickedLink = true;
         })
 
-        if (clickedLink) return;
-
-        clicked = null;
+        if (!clickedLink) clicked = null;
     });
 }
 
