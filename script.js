@@ -1,5 +1,5 @@
 function onTouchscreenClick(el, callback) {
-    el.addEventListener('click', callback);
+    el.addEventListener('touchstart', callback);
 }
 
 function touchscreenUseDoubleClick() {
