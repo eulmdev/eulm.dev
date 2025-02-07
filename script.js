@@ -1,5 +1,5 @@
 function onTouchscreenClick(el, callback) {
-    el.addEventListener('touchstart', callback);
+    el.addEventListener('click', callback);
 }
 
 function touchscreenUseDoubleClick() {
@@ -12,8 +12,16 @@ function touchscreenUseDoubleClick() {
         onTouchscreenClick(link, (event) => {
             if (clicked !== link.href) {
                 event.preventDefault();
+
                 clicked = link.href;
+
+                links.forEach((link) => link.classList.remove('active'));
+                link.classList.add('active');
+
                 warning.classList.remove('hidden');
+            } else {
+                link.classList.remove('active');
+                warning.classList.add('hidden');
             }
         });
     });
@@ -27,6 +35,7 @@ function touchscreenUseDoubleClick() {
 
         if (!clickedLink) {
             clicked = null;
+            links.forEach((link) => link.classList.remove('active'));
             warning.classList.add('hidden');
         }
     });
