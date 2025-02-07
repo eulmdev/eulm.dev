@@ -137,6 +137,10 @@ body {
     animation: fadeIn .5s ease;
 }
 
+[tooltip]:hover::after {
+    z-index: 2;
+}
+
 #warning {
     display: flex;
     align-items: center;
