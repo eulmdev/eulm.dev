@@ -99,7 +99,7 @@ body {
     transition: color 0.2s ease;
 }
 
-#links .link:hover, #links .link:active, #links .link.active {
+#links .link:hover, #links .link:focus, #links .link.active {
     outline: none;
     color: var(--text-bold);
 }
