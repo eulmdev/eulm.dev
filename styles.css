@@ -118,7 +118,7 @@ body {
     position: relative;
 }
 
-[tooltip]:hover::after, [tooltip]:active::after, [tooltip].active::after {
+[tooltip]:hover::after, [tooltip]:focus::after, [tooltip].active::after {
     padding: 5px 8px;
     background-color: var(--background);
     border: 1px solid var(--accent);
